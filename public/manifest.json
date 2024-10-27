@@ -1,6 +1,6 @@
 {
-    "name": "Adnen Khiari Tech Portfolio",
-    "short_name": "AdnenKh Portfolio",
+    "name": "Aymen Khiari Tech Portfolio",
+    "short_name": "AymenKh Portfolio",
     "theme_color": "#000000",
     "background_color": "#ffffff",
     "display": "minimal-ui",
@@ -8,7 +8,7 @@
     "scope": "/",
     "start_url": "/",
     "icons": {
-        "src": "/logo-1/logo-color.svg",
+        "src": "/logo-1/logo.png",
         "type": "image/svg+xml"
     }
 }

@@ -15,7 +15,7 @@ export default function NavBar() {
 
 
   useEffect(()=>{
-    getPicUrl("/MISC/AdnenKhiariCVNoPhone.pdf").then((img)=>{
+    getPicUrl("/MISC/cv.pdf").then((img)=>{
       setImgPath(img)
     })
   },[])
