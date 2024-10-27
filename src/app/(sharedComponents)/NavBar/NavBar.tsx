@@ -29,7 +29,7 @@ export default function NavBar() {
 
   return <header>
     <div className="logo">
-      <Link href={"/"}><Image width={100} height={100} src="/logo-1/logo-color.svg" alt="Adnen Khiari Portfolio Logo" /></Link>
+      <Link href={"/"}><Image width={100} height={100} src="/logo-1/logo.png" alt="Aymen Khiari Portfolio Logo" /></Link>
     </div>
     <nav className="navigation">
       <ul>

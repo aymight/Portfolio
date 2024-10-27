@@ -12,19 +12,18 @@ const mont = Montserrat({ subsets: ["latin"] });
 
 const metadata_values = {
   title:
-    "Adnen Khiari Data Science | Software Engineering student Tech Portfolio",
+    "Aymen Khiari Data Science | Software Engineering Tech Portfolio",
   description:
     "I'm a Data Science | Software Engineering student , Eager to learn and work on projects !",
-  author: "Adnen Khiari",
-  authorWebsite: "https://github.com/AdnenKhiari",
-  email: "adnenkhiari484@gmail.com",
+author: "Aymen Khiari",
+  authorWebsite: "https://github.com/aymight",
+  email: "aymenkhiari99@gmail.com",
   websiteUrl: process.env.SITE_URL as string,
   keywords: [
     "tech portfolio",
     "data science",
     "software engineering",
     "developer",
-    "student",
     "computer science",
     "junior developer",
     "Machine learning",
@@ -39,7 +38,7 @@ export const metadata: Metadata = {
   title: {
     default: metadata_values.title,
     template:
-      "%s - AdnenKh Data Science | Software Engineering student Tech Portfolio",
+      "%s - AymenKh Portfolio",
   },
   description: metadata_values.description,
   applicationName: metadata_values.title,
@@ -64,7 +63,7 @@ export const metadata: Metadata = {
     siteName: metadata_values.title,
     images: [
       {
-        url: metadata_values.websiteUrl + "/logo-1/logo-color.svg", // Must be an absolute URL
+        url: metadata_values.websiteUrl + "/logo-1/logo.png", // Must be an absolute URL
         width: 800,
         height: 600,
         alt: "Portfolio Logo Icon",
@@ -76,11 +75,11 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/logo-1/logo-color.svg",
-    shortcut: "/logo-1/logo-color.svg",
-    apple: "/logo-1/logo-color.svg",
+    icon: "/logo-1/logo.png",
+    shortcut: "/logo-1/logo.png",
+    apple: "/logo-1/logo.png",
     other: {
-      url: "/logo-1/logo-color.svg",
+      url: "/logo-1/logo.png",
     },
   },
   manifest: "/manifest.json",
@@ -89,7 +88,7 @@ export const metadata: Metadata = {
   //   title: metadata_values.title,
   //   description: metadata_values.description,
   //   creator: "@adnendbz",
-  //   images: ['/logo-1/logo-color.svg']
+  //   images: ['/logo-1/logo.png']
   // },
   // verification: {
   //   google: 'TODO',
@@ -135,7 +134,7 @@ export default function RootLayout({
         gtag('config', '${firebaseConfig.measurementId}');
       `}
           </Script>
-          <Script async data-id="1477234871" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></Script>
+          <Script async data-id="4355752586" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></Script>
         </div>
         <AnimatedCursor
           innerSize={8}

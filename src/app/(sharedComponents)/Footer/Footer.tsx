@@ -11,8 +11,8 @@ export default async function Footer() {
 
     return <footer>
       <div className="footer-left">
-        <Image src="/logo-2/logo-color.svg" alt="Adnen Khiari Portfolio footer logo" width={50} height={50}/>
-        <span className="p-light">Built By : DbzAdnen</span>
+        <Image src="/logo-1/logo.png" alt="Aymen Khiari Portfolio footer logo" width={50} height={50}/>
+        <span className="p-light">Built By : Aymen Khiari</span>
       </div>
       <div className="icon-ls">
         {info && info.social.map((soc: any,index: number)=>{
