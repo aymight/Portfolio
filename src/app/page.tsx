@@ -16,38 +16,39 @@ export const metadata: Metadata = {
 }
 
 const Content = ({info} : {info: any})=>{
-  return <React.Fragment> 
-    
-    <section className='hero box-container'>
-      <AboutMe details={info.sections.header} />
-    </section>
-    <section className='latest-proj box-container'>
-     <LatestProjects />
-    </section>
-    <div className='main-2 box-container'>
-      <section className='experience '>
-        <article className='professional boxed '>
-          <Experience description={info.sections.experience} />
-        </article>
-        <article className='education boxed'>
-          <Certification description={""}/>
-        </article>
-        <article className='education boxed'>
-          <Education description={info.sections.education}/>
-        </article>
-        <article className='contact'>
-          <article className='boxed'>
-          <ContactUs />
-          </article>
-        </article>
+  return <React.Fragment>
+
+      <section className='hero box-container'>
+          <AboutMe details={info.sections.header}/>
       </section>
-    </div>
-  </React.Fragment> 
+      <section className='latest-proj box-container'>
+          <LatestProjects/>
+      </section>
+      <div className='contact'>
+          <section className='experience '>
+              <article className='professional boxed '>
+                  <Experience description={info.sections.experience}/>
+              </article>
+              <article className='education boxed'>
+                  <Certification description={""}/>
+              </article>
+              <article className='education boxed'>
+                  <Education description={info.sections.education}/>
+              </article>
+
+          </section>
+      </div>
+      <article className='contact'>
+          <article className='boxed'>
+              <ContactUs/>
+          </article>
+      </article>
+  </React.Fragment>
 }
 export const revalidate = 60
 
-export default async function Home() {  
-  const info = await getFromFirestore("info").then((data)=>data[0])
+export default async function Home() {
+    const info = await getFromFirestore("info").then((data) =>data[0])
   return <Content info={info}></Content>
 }
 
